@@ -34,4 +34,33 @@ section{padding:48px 6%}.intro{text-align:center;background:var(--cream)}h2{colo
 <section class="contact" id="contact"><h2>Contactez notre agence</h2><p>Vous souhaitez visiter un bien ou poser une question ? Écrivez-nous par e-mail.</p><p><strong>E-mail :</strong> <a href="mailto:agenceimmobiliere382@gmail.com">agenceimmobiliere382@gmail.com</a></p><p><strong>Adresse :</strong> Długa 1, 80-827 Gdańsk, Pologne</p><p><strong>Téléphone :</strong> à ajouter</p><a class="btn" href="mailto:agenceimmobiliere382@gmail.com?subject=Demande%20de%20visite%20immobili%C3%A8re">Demander une visite par e-mail</a></section>
 </main>
 <footer>© Poland Home Realty · Immobilier en Pologne <br><span class="notice">Avant publication commerciale, vérifie les informations de l'agence et remplace les annonces d'exemple par des biens autorisés à la vente.</span></footer>
-</body></html>
+<section id="reservation">
+  <h2>Réserver une visite</h2>
+  <p>Contactez Poland Home Realty pour visiter un logement.</p>
+
+  <form action="https://formsubmit.co/agenceimmobiliere382@gmail.com" method="POST">
+
+    <input type="hidden" name="_subject" value="Nouvelle réservation - Poland Home Realty">
+
+    <label>Nom complet</label>
+    <input type="text" name="Nom" required>
+
+    <label>Adresse e-mail</label>
+    <input type="email" name="Email" required>
+
+    <label>Téléphone</label>
+    <input type="tel" name="Téléphone" required>
+
+    <label>Logement souhaité</label>
+    <input type="text" name="Logement" required>
+
+    <label>Date de visite</label>
+    <input type="date" name="Date" required>
+
+    <label>Message</label>
+    <textarea name="Message"></textarea>
+
+    <button type="submit">Envoyer ma demande</button>
+
+  </form>
+</section></body></html>
