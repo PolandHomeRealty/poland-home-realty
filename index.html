@@ -1,66 +1,381 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Poland Home Realty | Immobilier en Pologne</title>
+
+<meta name="description" content="Poland Home Realty : accompagnement dans vos projets de vente, location et recherche de logements dans toute la Pologne.">
+
 <style>
-:root{--navy:#132744;--gold:#c6a45b;--cream:#f7f5f0;--ink:#243247}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.5}
-header{background:var(--navy);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.brand{font-size:1.25rem;font-weight:800;letter-spacing:.03em}.brand span{color:var(--gold)}
-nav a{color:white;text-decoration:none;margin-left:16px;font-size:.95rem}
-.hero{padding:70px 6%;background:linear-gradient(90deg,rgba(12,30,54,.88),rgba(12,30,54,.38)),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80') center/cover;color:white}
-.hero h1{font-size:clamp(2rem,5vw,3.7rem);max-width:720px;line-height:1.1;margin:0 0 18px}.hero p{max-width:600px;font-size:1.1rem}
-.btn{display:inline-block;background:var(--gold);color:#17243a;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:5px;margin-top:12px}
-section{padding:48px 6%}.intro{text-align:center;background:var(--cream)}h2{color:var(--navy);font-size:2rem;margin-top:0}
-.search{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.search input,.search select{padding:13px;border:1px solid #ccd1d8;border-radius:5px;min-width:170px;background:white}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}.card{border:1px solid #e2e4e8;border-radius:10px;overflow:hidden;background:white;box-shadow:0 4px 14px #13274412}.card img{width:100%;height:180px;object-fit:cover}.card div{padding:18px}.price{font-weight:800;color:#9a772d;font-size:1.25rem}.tag{font-size:.85rem;color:#667085}
-.contact{background:var(--navy);color:white}.contact h2{color:white}.contact a{color:#f2d58f}footer{background:#0b192c;color:#d8dee8;padding:22px 6%;font-size:.9rem}
-.notice{font-size:.9rem;color:#596579}
-@media(max-width:600px){nav a{margin:0 8px 0 0}.hero{padding-top:50px;padding-bottom:50px}}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #263448;
+  line-height: 1.6;
+}
+
+header {
+  background: #132744;
+  color: white;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #d5b46b;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.hero {
+  background: linear-gradient(rgba(10,25,45,.75),rgba(10,25,45,.75)),
+  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80') center/cover;
+  color: white;
+  padding: 100px 7%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  background: #d5b46b;
+  color: #132744;
+  padding: 13px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+section {
+  padding: 60px 7%;
+}
+
+h2 {
+  color: #132744;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.intro {
+  background: #f7f5f0;
+  text-align: center;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.10);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 22px;
+}
+
+.card h3 {
+  color: #132744;
+  margin-bottom: 10px;
+}
+
+.about {
+  background: #f7f5f0;
+  text-align: center;
+}
+
+.about p {
+  max-width: 850px;
+  margin: auto;
+}
+
+.contact {
+  background: #132744;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact a {
+  color: #f0d58e;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  background: #d5b46b;
+  color: #132744;
+  border: none;
+  padding: 14px 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background: #09182b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+@media(max-width:600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="brand">POLAND <span>HOME REALTY</span></div><nav><a href="#biens">Nos biens</a><a href="#agence">Notre agence</a><a href="#contact">Contact</a></nav></header>
+
+<header>
+  <div class="logo">POLAND <span>HOME REALTY</span></div>
+
+  <nav>
+    <a href="#services">Nos services</a>
+    <a href="#agence">Notre agence</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
 <main>
-<section class="hero"><h1>Trouvez votre maison idéale en Pologne</h1><p>Découvrez des maisons et des appartements à vendre et bénéficiez d'un accompagnement personnalisé à chaque étape de votre projet immobilier.</p><a class="btn" href="#biens">Découvrir les biens</a></section>
-<section class="intro" id="agence"><h2>Votre projet immobilier commence ici</h2><p>Poland Home Realty vous accompagne dans votre recherche de maison ou d'appartement en Pologne.</p><form class="search" action="#biens"><input aria-label="Ville" placeholder="Ville (ex. Gdańsk)"><select aria-label="Type de bien"><option>Type de bien</option><option>Maison</option><option>Appartement</option></select><select aria-label="Budget"><option>Budget maximum</option><option>300 000 zł</option><option>500 000 zł</option><option>800 000 zł</option></select><button class="btn" type="submit">Rechercher</button></form></section>
-<section id="biens"><h2>Quelques exemples de biens</h2><p class="notice">Les cartes ci-dessous sont des exemples de présentation. Remplace-les par tes annonces réelles avant de promouvoir le site.</p><div class="cards">
-<article class="card"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Maison moderne"><div><div class="tag">Exemple · Maison</div><h3>Maison familiale moderne</h3><p>Jardin · 4 chambres · Garage</p><p class="price">Prix sur demande</p><a class="btn" href="#contact">Demander une visite</a></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Maison avec terrasse"><div><div class="tag">Exemple · Maison</div><h3>Maison avec terrasse</h3><p>Terrasse · Jardin · Lumineuse</p><p class="price">Prix sur demande</p><a class="btn" href="#contact">Demander une visite</a></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Intérieur d'appartement"><div><div class="tag">Exemple · Appartement</div><h3>Appartement contemporain</h3><p>2 chambres · Balcon · Parking</p><p class="price">Prix sur demande</p><a class="btn" href="#contact">Demander une visite</a></div></article>
-</div></section>
-<section class="contact" id="contact"><h2>Contactez notre agence</h2><p>Vous souhaitez visiter un bien ou poser une question ? Écrivez-nous par e-mail.</p><p><strong>E-mail :</strong> <a href="mailto:agenceimmobiliere382@gmail.com">agenceimmobiliere382@gmail.com</a></p><p><strong>Adresse :</strong> Długa 1, 80-827 Gdańsk, Pologne</p><p><strong>Téléphone :</strong> à ajouter</p><a class="btn" href="mailto:agenceimmobiliere382@gmail.com?subject=Demande%20de%20visite%20immobili%C3%A8re">Demander une visite par e-mail</a></section>
-</main>
-<footer>© Poland Home Realty · Immobilier en Pologne <br><span class="notice">Avant publication commerciale, vérifie les informations de l'agence et remplace les annonces d'exemple par des biens autorisés à la vente.</span></footer>
-<section id="reservation">
-  <h2>Réserver une visite</h2>
-  <p>Contactez Poland Home Realty pour visiter un logement.</p>
+
+<section class="hero">
+  <h1>Votre futur logement vous attend en Pologne</h1>
+
+  <p>
+    Découvrez nos services d'accompagnement pour acheter,
+    louer ou rechercher une maison ou un appartement
+    dans différentes villes de Pologne.
+  </p>
+
+  <a href="#contact" class="button">Nous contacter</a>
+</section>
+
+<section class="intro">
+  <h2>Bienvenue chez Poland Home Realty</h2>
+
+  <p>
+    Nous vous accompagnons dans vos projets immobiliers
+    en Pologne. Que vous souhaitiez acheter, louer ou
+    rechercher un logement, vous pouvez nous contacter
+    pour nous présenter votre projet.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Nos services immobiliers</h2>
+
+  <div class="cards">
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Maison">
+      <div class="card-content">
+        <h3>Achat de logements</h3>
+        <p>
+          Accompagnement dans votre recherche
+          de maisons et d'appartements à acheter
+          en Pologne.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Logement à louer">
+      <div class="card-content">
+        <h3>Location immobilière</h3>
+        <p>
+          Faites-nous connaître vos besoins
+          pour rechercher un logement à louer.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Appartement">
+      <div class="card-content">
+        <h3>Clients internationaux</h3>
+        <p>
+          Vous vivez à l'étranger et souhaitez
+          trouver un logement en Pologne ?
+          Présentez-nous votre projet.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <p style="text-align:center;margin-top:25px;color:#596579;">
+    Les photographies présentées sont illustratives.
+    Notre catalogue de logements disponibles est en préparation.
+  </p>
+</section>
+
+<section class="about" id="agence">
+  <h2>Notre agence</h2>
+
+  <p>
+    Poland Home Realty est basée à Gdańsk et propose
+    un accompagnement pour des projets immobiliers
+    dans différentes villes de Pologne.
+
+    Nous souhaitons accompagner les personnes résidant
+    en Pologne ainsi que les clients étrangers dans
+    leurs recherches de logements.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contactez Poland Home Realty</h2>
+
+  <p>
+    Vous recherchez une maison ou un appartement
+    à acheter ou à louer ?
+  </p>
+
+  <p style="margin-top:15px;">
+    Écrivez-nous :
+    <a href="mailto:agenceimmobiliere382@gmail.com">
+      agenceimmobiliere382@gmail.com
+    </a>
+  </p>
+
+  <h2 style="margin-top:40px;">Présentez votre projet</h2>
 
   <form action="https://formsubmit.co/agenceimmobiliere382@gmail.com" method="POST">
 
-    <input type="hidden" name="_subject" value="Nouvelle réservation - Poland Home Realty">
+    <input type="hidden" name="_subject" value="Nouvelle demande - Poland Home Realty">
 
     <label>Nom complet</label>
-    <input type="text" name="Nom" required>
+    <input type="text" name="Nom complet" required>
 
     <label>Adresse e-mail</label>
     <input type="email" name="Email" required>
 
-    <label>Téléphone</label>
-    <input type="tel" name="Téléphone" required>
+    <label>Votre projet</label>
+    <select name="Projet" required>
+      <option value="">Choisir</option>
+      <option>Achat</option>
+      <option>Location</option>
+      <option>Recherche de logement</option>
+    </select>
 
-    <label>Logement souhaité</label>
-    <input type="text" name="Logement" required>
+    <label>Type de logement</label>
+    <select name="Type de logement">
+      <option>Maison</option>
+      <option>Appartement</option>
+      <option>Autre</option>
+    </select>
 
-    <label>Date de visite</label>
-    <input type="date" name="Date" required>
+    <label>Ville ou région souhaitée</label>
+    <input type="text" name="Ville ou région">
 
-    <label>Message</label>
-    <textarea name="Message"></textarea>
+    <label>Date souhaitée pour une visite</label>
+    <input type="date" name="Date de visite">
+
+    <label>Votre message</label>
+    <textarea name="Message" required></textarea>
 
     <button type="submit">Envoyer ma demande</button>
 
   </form>
-</section></body></html>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Poland Home Realty
+
+  <p>
+    Immobilier en Pologne · Achat · Location
+  </p>
+
+  <p>
+    Photographies illustratives. Les logements
+    et leurs disponibilités doivent être confirmés.
+  </p>
+</footer>
+
+</body>
+</html>
